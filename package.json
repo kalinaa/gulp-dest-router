@@ -1,0 +1,33 @@
+{
+  "name": "gulp-dest-router",
+  "version": "0.1.0",
+  "description": "routes files in different directories in gulp task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalinaa/gulp-dest-router.git"
+  },
+  "keywords": [
+    "dest",
+    "router",
+    "routes",
+    "gulp",
+    "plugin"
+  ],
+  "author": "Aleksandr Kalinin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalinaa/gulp-dest-router/issues"
+  },
+  "homepage": "https://github.com/kalinaa/gulp-dest-router#readme",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.7.3"
+  }
+}
