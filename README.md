@@ -6,7 +6,7 @@ npm install gulp-dest-router --save-dev
 
 # Basic Usage
 
-You can use routes for build your files in different directories.
+You can use routes to build your files in different directories.
 Like this:
 
 ```javascript
@@ -22,7 +22,7 @@ gulp.task('copy:static', function () {
         .pipe(destRouter({
             dest:'./build/assets',      //default destination path for all files
             routes:{
-                'index.html': '../',    //for index.html dest path is up one level from default dest path
+                'index.html': '../',    //for index.html dest path is one level up from default dest path
                 'vk.png':'icons'        //for ./static/images/vk.png file dest path is ./build/assets/icons,
                 '*': 'other_folder'     //for all other files (use '*' symbol)
             }                             //in ./static/images/ dest path is ./build/assets/other_folder
@@ -30,10 +30,10 @@ gulp.task('copy:static', function () {
 })
 ```
 
-> if '*' not defined, all files will be copied to default destination path
-> gulp-dest-router is not able to handle folder completely, like 'path/to/include/**'
+> if `*` is not defined, all files will be copied to default destination path.
+> gulp-dest-router is not able to handle entire folder, like `path/to/include/**`
 
-Also you can use it instead gulp.dest
+Also you can use it instead of gulp.dest
 ```javascript
 'use strict';
 
@@ -49,18 +49,18 @@ gulp.task('styles', function () {
 
 - `dest`
 
-	`String`.
+	`String` Required.
 	Default destination path for all files.
 
 - `routes`
 
 	`Object`
-	Optional setting. If pass it, all files will be copied to default dest path.
-	'*' - use for all files.
+	Optional setting. If it is passed, all files will be copied to default dest path.
+	Use `*` for all files.
 
 	```javascript
 	{
 	    'relativePath/to/srcFile': 'dest/path'
 	}
 	```
-	> relative path from source path, which has been defined in gulp.src()
+	> relative path from source path, which was defined in gulp.src()

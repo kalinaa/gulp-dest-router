@@ -1,6 +1,6 @@
 {
   "name": "gulp-dest-router",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "routes files in different directories in gulp task",
   "main": "index.js",
   "scripts": {
